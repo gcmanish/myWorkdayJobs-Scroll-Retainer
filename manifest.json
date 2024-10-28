@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Workday Scroll Retainer",
+  "version": "1.0",
+  "description": "Remembers scroll position on job link clicks and restores it on content updates on myworkdayjobs.com",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.myworkdayjobs.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
